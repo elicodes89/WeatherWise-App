@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 
+	  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="src/style.css" />
+	<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather Wise</title>
+  </head>
+  <body>
+    <div class="container">
+		<div class="weatherwise">
+		    <div id="city"></div>
+
+			
+      <form id="search-form">
+        <input type="text" placeholder="Enter a city" autocomplete="off" autofocus="on" id="search-city" />
+		<input type="submit" value="🔍" />
+		<button class ="currentLocation" id="current-location-button"> Current 📍</button>
+	  </form>
+
+	</br>
+	<div class="appcontent">
+	<h1>Dalkeith</h1>
+	</div>
+	<img src="surfing.svg" width="200"/>
+</br>
+</br>
+	  <div class="notes">
+		Currently: 
+		<h4></h4>
+<span class="temperature" id="temperature"></span>
+<span class = "units">				  
+<a href="#" id="celsius-link">℃</a> |
+<a href="#" id="fahrenheit-link"></a>
+</span>
+</br>
+			  
+<span class="wDescription">Cloudiness:</span>
+</br>
+<span class="humidity">Humidity:</span>
+</br>
+<span class="wind-speed">Wind:</span>
+</br>
+
+						
+
+</div>
+<h5></h5>
+<hr></hr>
+<div class="row">
+		  <div class="col">
+			  TUESDAY
+			  🌞
+		
+			  
+		  </div>
+	<div class="col">
+			  WEDNESDAY
+			  🌞
+			 
+		  </div>
+		  <div class="col">
+			  THURSDAY
+			  🌞
+			 
+		  </div>
+		  <div class="col">
+			  FRIDAY
+			  🌞
+			  
+		  </div>
+		  <div class="col">
+			  SATURDAY
+			  🌞
+			  
+		  </div>
+		  <div class="col">
+			  SUNDAY
+			  🌞
+			  
+			  
+		  </div>	  
+		</div>
+	</div>
+	</div>
+	<script src="src/script.js"></script>
+  </body>
+</html>
