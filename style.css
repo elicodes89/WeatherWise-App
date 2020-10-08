@@ -60,3 +60,8 @@ input {
 .row {
   font-family: "Tajawal", sans-serif;
 }
+
+.link {
+  text-align: left;
+  padding: 0px 0px 0px 110px;
+}
