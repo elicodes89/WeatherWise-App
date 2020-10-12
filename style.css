@@ -1,10 +1,5 @@
 body {
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
 .container {
   text-align: center;
@@ -12,35 +7,40 @@ body {
 }
 
 .weatherwise {
-  border: 1px solid rgb(221, 216, 216);
+  border: 4px solid #99ff66;
   padding: 40px 20px;
   margin: 30px auto;
   max-width: 900px;
   border-radius: 5px;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  background: #001437;
+}
+
+input {
+  border: 1px;
+  border-radius: 8px;
+  color: #fc6e22;
+  background: #213e3b;
+  padding: 8px 6px 6px 8px;
 }
 
 .currentLocation {
-  border: 1px solid rgb(221, 216, 216);
-  padding: 10px 20px;
+  border: 1px solid #213e3b;
+  padding: 5px 20px;
   margin: 30px auto;
-  max-width: 900px;
   border-radius: 5px;
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  background: #213e3b;
+  color: #fc6e22;
 }
 
 h1 {
   margin-top: 20px;
   padding-bottom: 90px;
   font-family: "Tajawal", sans-serif;
+  color: #fc6e22;
 }
 
-input {
-  border: 10px;
-  border-radius: 8px;
-  color: black;
-  background: #d2f6c5;
-  padding: 8px 6px 6px 8px;
+h5 {
+  color: #fc6e22;
 }
 
 .notes {
@@ -48,19 +48,23 @@ input {
   font-size: 25px;
   line-height: 28px;
   font-family: "Tajawal", sans-serif;
+  color: #fc6e22;
 }
 
 .appcontent {
   font-size: 66px;
   text-align: left;
   font-family: "Tajawal", sans-serif;
+  color: #fc6e22;
 }
 
 .row {
   font-family: "Tajawal", sans-serif;
+  color: #fc6e22;
 }
 
 .link {
   text-align: left;
   padding: 0px 0px 0px 110px;
+  color: #fc6e22;
 }
