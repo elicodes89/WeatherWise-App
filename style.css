@@ -10,15 +10,15 @@ body {
   border: 4px solid #99ff66;
   padding: 40px 20px;
   margin: 30px auto;
-  max-width: 900px;
+  max-width: 650px;
   border-radius: 5px;
-  background: #001437;
+  background: #120052;
 }
 
 input {
   border: 1px;
   border-radius: 8px;
-  color: #fc6e22;
+  color: #03dddc;
   background: #213e3b;
   padding: 8px 6px 6px 8px;
 }
@@ -29,18 +29,18 @@ input {
   margin: 30px auto;
   border-radius: 5px;
   background: #213e3b;
-  color: #fc6e22;
+  color: #03dddc;
 }
 
 h1 {
-  margin-top: 20px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   font-family: "Tajawal", sans-serif;
-  color: #fc6e22;
+  color: #03dddc;
+  text-align: center;
 }
 
 h5 {
-  color: #fc6e22;
+  color: #03dddc;
 }
 
 .notes {
@@ -48,23 +48,23 @@ h5 {
   font-size: 25px;
   line-height: 28px;
   font-family: "Tajawal", sans-serif;
-  color: #fc6e22;
+  color: #03dddc;
 }
 
 .appcontent {
   font-size: 66px;
   text-align: left;
   font-family: "Tajawal", sans-serif;
-  color: #fc6e22;
+  color: #03dddc;
 }
 
 .row {
   font-family: "Tajawal", sans-serif;
-  color: #fc6e22;
+  color: #03dddc;
 }
 
 .link {
   text-align: left;
-  padding: 0px 0px 0px 110px;
-  color: #fc6e22;
+  text-align: center;
+  color: #99ff66;
 }
