@@ -1,113 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	 
-	  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Weather Wise</title>
-  </head>
-  <body>
-    <div class="container">
-		<div class="weatherwise">
-		    <div id="city"></div>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+		crossorigin="anonymous"
+		/>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<title>Weather Wise</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="weatherwise">
+				<div id="city"></div>
 
+				
+		<form id="search-form">
+			<input type="text" placeholder="Enter a city" autocomplete="off" autofocus="on" id="search-city" />
+			<input type="submit" value="🔍" />
+			<button class ="currentLocation" id="current-location-button"> Current 📍</button>
+		</form>
+		<div class="appcontent">
 			
-      <form id="search-form">
-        <input type="text" placeholder="Enter a city" autocomplete="off" autofocus="on" id="search-city" />
-		<input type="submit" value="🔍" />
-		<button class ="currentLocation" id="current-location-button"> Current 📍</button>
-	  </form>
-	<div class="appcontent">
-		
-	<h1>Dalkeith</h1>
-	<h5></h5>
+		<h1>Dalkeith</h1>
+		<h5></h5>
+		</div>
+		<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon" width="170"/>
+		<div class="alt" id= "descrip"> Rain </div>
+
+		<div class="notes">
+			Currently: 
+			<h4></h4>
+	<span class="temperature" id="temperature"></span>
+	<span class = "units">				  
+	<a href="#" id="celsius-link">℃</a> |
+	<a href="#" id="fahrenheit-link">°F</a>
+	</span>
+	</br>
+				
+	<span class="wDescription">Cloudiness: 10%</span>
+	</br>
+	<span class="humidity">Humidity: 10%</span>
+	</br>
+	<span class="wind-speed">Wind: 4km/h</span>
+			
+
 	</div>
-	<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon" width="170"/>
 
-	  <div class="notes">
-		Currently: 
-		<h4></h4>
-<span class="temperature" id="temperature"></span>
-<span class = "units">				  
-<a href="#" id="celsius-link">℃</a> |
-<a href="#" id="fahrenheit-link">°F</a>
-</span>
-</br>
-			  
-<span class="wDescription">Cloudiness: 10%</span>
-</br>
-<span class="humidity">Humidity: 10%</span>
-</br>
-<span class="wind-speed">Wind: 4km/h</span>
-		
+	<hr></hr>
+	<div class="row weather-forecast" id="forecast">
 
-</div>
-
-<hr></hr>
-<div class="row weather-forecast">
-		  <div class="col-2">
-			  <h3>TUE</h3>
-			  
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-			  </div>
-	<div class="col-2">
-		<h3>WED</h3>
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-
-		  </div>
-		  <div class="col-2">
-			  <h3>THU</h3>
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-
-		  </div>
-		  <div class="col-2">
-			  <h3>FRI</h3>
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-
-		  </div>
-		  <div class="col-2">
-			  <h3>SAT</h3>
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-
-		  </div>
-		  <div class="col-2">
-			  <h3>SUN</h3>
-		<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
-		<div class="weather-forecast-temperature">
-			<strong>22° </strong>17°
-		</div>
-
-			  
-		  </div>	  
-		</div>
 	</div>
+	<!-- <div class="col-2">
+			<h3>12:00</h3>				
+			<img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt=""/>
+			<div class="weather-forecast-temperature">
+				<strong>16° </strong>15°
+			</div> -->
+	</div>	  
+	<!-- </div>
+		</div> -->
 	<div class="link">
-		<a href="https://github.com/elicodes89/WeatherWise-App" target="_blank">Open-source code </a> by EliCodes
+			<a href="https://github.com/elicodes89/WeatherWise-App" target="_blank">Open-source code </a> by EliCodes
 	</div>
-	</div>
-<script src="script.js"></script>
-  </body>
-</html>
+		<!-- </div> -->
+	<script src="script.js"></script>
+	</body>
+	</html>
