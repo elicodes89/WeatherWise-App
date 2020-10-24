@@ -35,7 +35,6 @@ let date = now.getDate();
 let year = now.getFullYear();
 let day = days[now.getDay()];
 let month = months[now.getMonth()];
-
 h5.innerHTML = `${day} ${month} ${date}, ${formatHours(now)}`;
 
 function showCity(event) {
@@ -87,7 +86,6 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
-
 for (let index = 0; index < 6; index ++){
 	let forecast = response.data.list[index];
   forecastElement.innerHTML += `
@@ -110,7 +108,6 @@ for (let index = 0; index < 6; index ++){
 	}
 }
   
-
 function searchCity(city) {
   let units = "metric";
   let apiKey = "eeb8f7e85a1864933f31f435c249cf5b";
@@ -124,6 +121,7 @@ function searchCity(city) {
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
+  
 }
 
 function searchLocation(position) {
@@ -149,8 +147,6 @@ function displaycelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
